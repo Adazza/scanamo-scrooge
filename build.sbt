@@ -1,17 +1,18 @@
 name := "scanamo-scrooge"
 organization := "com.gu"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-reflect" % scalaVersion.value,
-	"com.twitter" %% "scrooge-core" % "3.20.0",
+	"com.twitter" %% "scrooge-core" % "4.14.0",
 	"org.apache.thrift" % "libthrift" % "0.9.2",
-  "com.gu" %% "scanamo" % "0.9.0",
+  "com.gu" %% "scanamo" % "0.9.1",
   "org.typelevel" %% "macro-compat" % "1.1.1",
   compilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full),
-  "org.scalatest" %% "scalatest" % "2.2.5" % Test,
-  "org.scalacheck" %% "scalacheck" % "1.12.4" % Test,
+
+  "org.scalatest" %% "scalatest" % "3.0.1" % Test,
+  "org.scalacheck" %% "scalacheck" % "1.13.4" % Test,
   "com.gu" %% "content-atom-model" % "2.4.30" % Test
 )
 
