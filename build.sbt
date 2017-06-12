@@ -1,7 +1,7 @@
 name := "scanamo-scrooge"
 organization := "com.gu"
 
-scalaVersion := "2.12.1"
+crossScalaVersions := Seq("2.11.11", "2.12.1")
 
 libraryDependencies ++= Seq(
   "org.scala-lang" % "scala-reflect" % scalaVersion.value,
